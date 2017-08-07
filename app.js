@@ -60,8 +60,8 @@ function Classe(){
     }
     this.afficheStatClasse = function(){
         var count = this.compteEleve("A");
-        var moy =0;
         console.log("Nombre d'éleves : "+count);
+        var moy =0;
         console.log("Nombre de garçons : "+this.compteEleve("M"));
         console.log("Nombre de filles : "+this.compteEleve("F"));
        
@@ -80,7 +80,7 @@ function Classe(){
 
 }
 var classe1 = new Classe();
-classe1.addEleve("jack","sparrow","M",12);
+classe1.addEleve("jack","sparrow","FEMINAZI",12);
 classe1.addEleve("jackline","sparrou","F",12);
 classe1.afficheEleves();
 classe1.afficheStatClasse();
