@@ -64,11 +64,12 @@ function Classe(){
         console.log("Nombre d'éleves : "+count);
         console.log("Nombre de garçons : "+this.compteEleve("M"));
         console.log("Nombre de filles : "+this.compteEleve("F"));
-        for (var index = 0; index < count; index++) {
+       
+        if(count > 0){
+             for (var index = 0; index < count; index++) {
             moy+= this.eleves[index].age;
             
         }
-        if(moy > 0){
             console.log("Age moyen: "+(moy/count));
         }
         else{
