@@ -80,7 +80,7 @@ function Classe(){
 
 }
 var classe1 = new Classe();
-classe1.addEleve("jack","sparrow","FEMINAZI",12);
+classe1.addEleve("jack","sparrow","M",12);
 classe1.addEleve("jackline","sparrou","F",12);
 classe1.afficheEleves();
 classe1.afficheStatClasse();
