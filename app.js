@@ -76,14 +76,28 @@ function Classe(){
             console.log("Age moyen: 0");
         }
     }
+    this.ageMax=function(){
+        var age = 0;
+        for (var index = 0; index < this.eleves.length; index++) {
+            if(age < this.eleves[index].age){
+                age =this.eleves[index].age;
+            }            
+        }
+        return age;
+    }
 
 
 }
-// var classe1 = new Classe();
-// classe1.addEleve("jack","sparrow","M",12);
-// classe1.addEleve("jackline","sparrou","F",12);
-// classe1.afficheEleves();
-// classe1.afficheStatClasse();
+var classe1 = new Classe();
+classe1.addEleve("jack","sparrow","M",12);
+classe1.addEleve("jackline","sparrou","F",8);
+classe1.addEleve("joe","sparrou","M",42);
+classe1.addEleve("louise","sparrou","F",18);
+classe1.addEleve("lily","evans","F",4);
+classe1.addEleve("garry","topper","M",17);
+classe1.afficheEleves();
+classe1.afficheStatClasse();
+console.log(classe1.ageMax());
 function Peroquet(){
     this.memoire="";
     this.ecoute = function(phrase){
@@ -96,6 +110,6 @@ function Peroquet(){
     }
 }
 
-var peroquet = new Peroquet();
-peroquet.ecoute("je suis un vilain, vilain garçon");
-peroquet.repete();
+// var peroquet = new Peroquet();
+// peroquet.ecoute("je suis un vilain, vilain garçon");
+// peroquet.repete();
