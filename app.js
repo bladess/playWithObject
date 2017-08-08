@@ -79,8 +79,23 @@ function Classe(){
 
 
 }
-var classe1 = new Classe();
-classe1.addEleve("jack","sparrow","M",12);
-classe1.addEleve("jackline","sparrou","F",12);
-classe1.afficheEleves();
-classe1.afficheStatClasse();
+// var classe1 = new Classe();
+// classe1.addEleve("jack","sparrow","M",12);
+// classe1.addEleve("jackline","sparrou","F",12);
+// classe1.afficheEleves();
+// classe1.afficheStatClasse();
+function Peroquet(){
+    this.memoire="";
+    this.ecoute = function(phrase){
+        this.memoire=phrase;
+    }
+    this.repete=function(){
+        for (var index = 0; index < 3; index++) {
+            console.log(this.memoire); 
+        }
+    }
+}
+
+var peroquet = new Peroquet();
+peroquet.ecoute("je suis un vilain, vilain garçon");
+peroquet.repete();
